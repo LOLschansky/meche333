@@ -51,8 +51,8 @@ static void write_register(unsigned short voltage, int channel) {
     buf[0] = buf[0] | (0b111 << 4);
     buf[0] = buf[0] | (voltage >> 6);
 
-    buf[1] = (voltage >> 4) << 2;
-    buf[1] = buf[1] | 0b00000011; // last two bits can be anything
+    buf[1] = voltage << 2;
+    //buf[1] = buf[1] | 0b00000011; // last two bits can be anything
 
     cs_select();
     spi_write_blocking(spi_default, buf, 2);
