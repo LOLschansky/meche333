@@ -195,7 +195,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/lucasolschansky/Desktop/meche433/hw3/build"
+			"value" : "/Users/lucasolschansky/Desktop/meche433/hw5/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -695,7 +695,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/lucasolschansky/Desktop/meche433/hw3/build/CMakeFiles/pkgRedirects"
+			"value" : "/Users/lucasolschansky/Desktop/meche433/hw5/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -755,7 +755,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/lucasolschansky/Desktop/meche433/hw3"
+			"value" : "/Users/lucasolschansky/Desktop/meche433/hw5"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1507,7 +1507,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : " /Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/cmsis /Users/lucasolschansky/Pico/pico-sdk/src/rp2040/hardware_regs /Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/cmsis /Users/lucasolschansky/Pico/pico-sdk/src/rp2040/hardware_regs /Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/cmsis /Users/lucasolschansky/Pico/pico-sdk/src/rp2040/hardware_regs /Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/cmsis /Users/lucasolschansky/Pico/pico-sdk/src/rp2040/hardware_regs /Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/cmsis /Users/lucasolschansky/Pico/pico-sdk/src/rp2040/hardware_regs /Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/cmsis /Users/lucasolschansky/Pico/pico-sdk/src/rp2040/hardware_regs /Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/cmsis /Users/lucasolschansky/Pico/pico-sdk/src/rp2040/hardware_regs /Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/cmsis /Users/lucasolschansky/Pico/pico-sdk/src/rp2040/hardware_regs"
+			"value" : " /Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/cmsis /Users/lucasolschansky/Pico/pico-sdk/src/rp2040/hardware_regs /Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/cmsis /Users/lucasolschansky/Pico/pico-sdk/src/rp2040/hardware_regs /Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/cmsis /Users/lucasolschansky/Pico/pico-sdk/src/rp2040/hardware_regs /Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/cmsis /Users/lucasolschansky/Pico/pico-sdk/src/rp2040/hardware_regs /Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/cmsis /Users/lucasolschansky/Pico/pico-sdk/src/rp2040/hardware_regs /Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/cmsis /Users/lucasolschansky/Pico/pico-sdk/src/rp2040/hardware_regs /Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/cmsis /Users/lucasolschansky/Pico/pico-sdk/src/rp2040/hardware_regs /Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/cmsis /Users/lucasolschansky/Pico/pico-sdk/src/rp2040/hardware_regs /Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/cmsis /Users/lucasolschansky/Pico/pico-sdk/src/rp2040/hardware_regs /Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/cmsis /Users/lucasolschansky/Pico/pico-sdk/src/rp2040/hardware_regs /Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/cmsis /Users/lucasolschansky/Pico/pico-sdk/src/rp2040/hardware_regs /Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/cmsis /Users/lucasolschansky/Pico/pico-sdk/src/rp2040/hardware_regs /Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/cmsis /Users/lucasolschansky/Pico/pico-sdk/src/rp2040/hardware_regs /Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/cmsis /Users/lucasolschansky/Pico/pico-sdk/src/rp2040/hardware_regs /Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/cmsis /Users/lucasolschansky/Pico/pico-sdk/src/rp2040/hardware_regs"
 		},
 		{
 			"name" : "PICO_DOXYGEN_PATHS",
@@ -1795,7 +1795,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/lucasolschansky/Desktop/meche433/hw3/build"
+			"value" : "/Users/lucasolschansky/Desktop/meche433/hw5/build"
 		},
 		{
 			"name" : "pico_examples_IS_TOP_LEVEL",
@@ -1819,7 +1819,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/lucasolschansky/Desktop/meche433/hw3"
+			"value" : "/Users/lucasolschansky/Desktop/meche433/hw5"
 		},
 		{
 			"name" : "pico_sdk_BINARY_DIR",
@@ -1831,7 +1831,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/lucasolschansky/Desktop/meche433/hw3/build/pico-sdk"
+			"value" : "/Users/lucasolschansky/Desktop/meche433/hw5/build/pico-sdk"
 		},
 		{
 			"name" : "pico_sdk_IS_TOP_LEVEL",

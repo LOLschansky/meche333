@@ -85,22 +85,39 @@ int main() {
     // Make the CS pin available to picotool
     bi_decl(bi_1pin_with_name(PICO_DEFAULT_SPI_CSN_PIN, "SPI CS"));
 
+    
     int rate = 1;
     int t = 0;
+
+    //
+    int rate_t = 2;
+    int t_t = 0;
+    int voltage_triangle = 0;
 
        while (true){
         float voltage_fl_sin = sin(2.0*3.1415*2*(((float) t)/1024.0))*511.0 + 511.0;
         int voltage_sin = (int) voltage_fl_sin;
 
-        int voltage_triangle = t + 511;
-        write_register(voltage_triangle, 1);
+        voltage_triangle = voltage_triangle + rate_t;
+        //need to multiply by 2 to get proper period
+
+
+        write_register(voltage_triangle-1, 1);
         write_register(voltage_sin, 0);
-        if ((t == 0) || (t == 1024)){
+
+        if ((t == 0) || (t == 1023)){
             rate = rate * -1;
+        }
+        if ((voltage_triangle  == 0) || (voltage_triangle == 1022)){
+            rate_t = rate_t * -1;
         }
         sleep_ms(1);
         t = t + rate;
 
     }
+    
+
+
+
 #endif
 }

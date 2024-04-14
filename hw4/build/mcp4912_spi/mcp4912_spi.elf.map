@@ -1225,9 +1225,9 @@ Discarded input sections
                 0x00000000       0x3c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
  .time_critical.spi_read16_blocking
                 0x00000000       0x3e CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
- .text          0x00000000        0x0 /var/folders/l7/cb0xcf750d14ygxsby8ykcy40000gn/T//ccAbmMyo.o
- .data          0x00000000        0x0 /var/folders/l7/cb0xcf750d14ygxsby8ykcy40000gn/T//ccAbmMyo.o
- .bss           0x00000000        0x0 /var/folders/l7/cb0xcf750d14ygxsby8ykcy40000gn/T//ccAbmMyo.o
+ .text          0x00000000        0x0 /var/folders/l7/cb0xcf750d14ygxsby8ykcy40000gn/T//cc2975Y2.o
+ .data          0x00000000        0x0 /var/folders/l7/cb0xcf750d14ygxsby8ykcy40000gn/T//cc2975Y2.o
+ .bss           0x00000000        0x0 /var/folders/l7/cb0xcf750d14ygxsby8ykcy40000gn/T//cc2975Y2.o
  .data          0x00000000        0x0 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x00000000        0x0 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x00000000        0x0 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-calloc.o)
@@ -1546,11 +1546,11 @@ LOAD /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-no
 .boot2          0x10000000      0x100
                 0x10000000                        __boot2_start__ = .
  *(.boot2)
- .boot2         0x10000000      0x100 /var/folders/l7/cb0xcf750d14ygxsby8ykcy40000gn/T//ccAbmMyo.o
+ .boot2         0x10000000      0x100 /var/folders/l7/cb0xcf750d14ygxsby8ykcy40000gn/T//cc2975Y2.o
                 0x10000100                        __boot2_end__ = .
                 0x00000001                        ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x10000100     0x4f80
+.text           0x10000100     0x4f90
                 0x10000100                        __logical_binary_start = .
  *(.vectors)
  .vectors       0x10000100       0xd4 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1615,550 +1615,551 @@ LOAD /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-no
  .text.frame_dummy
                 0x100002e4       0x24 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
  .text.write_register
-                0x10000308       0x5c CMakeFiles/mcp4912_spi.dir/mcp4912_spi.c.obj
- .text.main     0x10000364       0xc0 CMakeFiles/mcp4912_spi.dir/mcp4912_spi.c.obj
-                0x10000364                main
+                0x10000308       0x54 CMakeFiles/mcp4912_spi.dir/mcp4912_spi.c.obj
+ .text.main     0x1000035c       0xd4 CMakeFiles/mcp4912_spi.dir/mcp4912_spi.c.obj
+                0x1000035c                main
  .text.gpio_set_function
-                0x10000424       0x30 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x10000424                gpio_set_function
+                0x10000430       0x30 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x10000430                gpio_set_function
  .text.gpio_init
-                0x10000454       0x16 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x10000454                gpio_init
- *fill*         0x1000046a        0x2 
+                0x10000460       0x16 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x10000460                gpio_init
+ *fill*         0x10000476        0x2 
  .text.running_on_fpga
-                0x1000046c       0x14 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-                0x1000046c                running_on_fpga
+                0x10000478       0x14 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x10000478                running_on_fpga
  .text.hw_claim_lock
-                0x10000480       0x18 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x10000480                hw_claim_lock
+                0x1000048c       0x18 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x1000048c                hw_claim_lock
  .text.hw_claim_unlock
-                0x10000498       0x14 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x10000498                hw_claim_unlock
+                0x100004a4       0x14 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x100004a4                hw_claim_unlock
  .text.hw_claim_or_assert
-                0x100004ac       0x32 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x100004ac                hw_claim_or_assert
- *fill*         0x100004de        0x2 
+                0x100004b8       0x32 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x100004b8                hw_claim_or_assert
+ *fill*         0x100004ea        0x2 
  .text.spin_locks_reset
-                0x100004e0       0x20 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x100004e0                spin_locks_reset
+                0x100004ec       0x20 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x100004ec                spin_locks_reset
  .text.next_striped_spin_lock_num
-                0x10000500       0x1c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x10000500                next_striped_spin_lock_num
+                0x1000050c       0x1c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x1000050c                next_striped_spin_lock_num
  .text.set_raw_irq_handler_and_unlock
-                0x1000051c       0x28 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000528       0x28 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .text.resolve_branch
-                0x10000544       0x30 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000550       0x30 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .text.make_branch
-                0x10000574       0x48 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000580       0x48 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .text.insert_branch_and_link
-                0x100005bc       0x40 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x100005c8       0x40 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .text.irq_is_enabled
-                0x100005fc       0x18 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x100005fc                irq_is_enabled
+                0x10000608       0x18 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000608                irq_is_enabled
  .text.irq_set_mask_enabled
-                0x10000614       0x20 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000614                irq_set_mask_enabled
+                0x10000620       0x20 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000620                irq_set_mask_enabled
  .text.irq_set_enabled
-                0x10000634        0xe CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000634                irq_set_enabled
- *fill*         0x10000642        0x2 
+                0x10000640        0xe CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000640                irq_set_enabled
+ *fill*         0x1000064e        0x2 
  .text.irq_get_vtable_handler
-                0x10000644       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000644                irq_get_vtable_handler
+                0x10000650       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000650                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x10000654       0x54 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000654                irq_set_exclusive_handler
+                0x10000660       0x54 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000660                irq_set_exclusive_handler
  .text.irq_remove_handler
-                0x100006a8      0x188 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x100006a8                irq_remove_handler
+                0x100006b4      0x188 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x100006b4                irq_remove_handler
  .text.irq_add_tail_to_free_list
-                0x10000830       0xf0 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000830                irq_add_tail_to_free_list
+                0x1000083c       0xf0 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x1000083c                irq_add_tail_to_free_list
  .text.irq_init_priorities
-                0x10000920       0x1c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000920                irq_init_priorities
+                0x1000092c       0x1c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x1000092c                irq_init_priorities
  .text.lock_init
-                0x1000093c       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                0x1000093c                lock_init
+                0x10000948       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x10000948                lock_init
  .text.mutex_init
-                0x1000094c       0x1a CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x1000094c                mutex_init
+                0x10000958       0x1a CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x10000958                mutex_init
  .text.recursive_mutex_init
-                0x10000966       0x1e CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x10000966                recursive_mutex_init
+                0x10000972       0x1e CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x10000972                recursive_mutex_init
  .text.time_reached
-                0x10000984       0x28 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000990       0x28 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.get_entry
-                0x100009ac       0x38 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x100009b8       0x38 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.timer_pool_entry_comparator
-                0x100009e4       0x2e CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x100009e4                timer_pool_entry_comparator
- *fill*         0x10000a12        0x2 
+                0x100009f0       0x2e CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x100009f0                timer_pool_entry_comparator
+ *fill*         0x10000a1e        0x2 
  .text.update_us_since_boot
-                0x10000a14       0x24 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000a20       0x24 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.delayed_by_us
-                0x10000a38       0x34 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000a44       0x34 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.ph_get_node
-                0x10000a6c       0x30 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000a78       0x30 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.ph_contains_node
-                0x10000a9c       0x1e CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000aa8       0x1e CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.ph_new_node
-                0x10000aba       0x28 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10000ae2        0x2 
+                0x10000ac6       0x28 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10000aee        0x2 
  .text.ph_add_child_node
-                0x10000ae4       0x6c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000af0       0x6c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.ph_merge_nodes
-                0x10000b50       0x3e CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10000b8e        0x2 
+                0x10000b5c       0x3e CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10000b9a        0x2 
  .text.ph_insert_node
-                0x10000b90       0x3c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000b9c       0x3c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.ph_free_node
-                0x10000bcc       0x5c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000bd8       0x5c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.get_entry_id_high
-                0x10000c28       0x30 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000c34       0x30 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_post_alloc_init
-                0x10000c58       0x40 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000c64       0x40 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.sleep_until_callback
-                0x10000c98       0x30 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000ca4       0x30 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.get_absolute_time
-                0x10000cc8       0x22 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000cd4       0x22 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.make_timeout_time_us
-                0x10000cea       0x24 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10000d0e        0x2 
+                0x10000cf6       0x24 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10000d1a        0x2 
  .text.add_alarm_under_lock
-                0x10000d10       0x94 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000d1c       0x94 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x10000da4      0x210 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000db0      0x210 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x10000fb4       0x40 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x10000fb4                alarm_pool_init_default
+                0x10000fc0       0x40 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000fc0                alarm_pool_init_default
  .text.alarm_pool_get_default
-                0x10000ff4       0x2c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x10000ff4                alarm_pool_get_default
+                0x10001000       0x2c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001000                alarm_pool_get_default
  .text.alarm_pool_add_alarm_at
-                0x10001020      0x10e CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x10001020                alarm_pool_add_alarm_at
+                0x1000102c      0x10e CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x1000102c                alarm_pool_add_alarm_at
  .text.add_alarm_at
-                0x1000112e       0x2e CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x1000113a       0x2e CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_cancel_alarm
-                0x1000115c       0xa8 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x1000115c                alarm_pool_cancel_alarm
+                0x10001168       0xa8 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001168                alarm_pool_cancel_alarm
  .text.cancel_alarm
-                0x10001204       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001210       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.sleep_until
-                0x10001214       0xb0 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x10001214                sleep_until
+                0x10001220       0xb0 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001220                sleep_until
  .text.sleep_us
-                0x100012c4       0x1a CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x100012c4                sleep_us
+                0x100012d0       0x1a CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x100012d0                sleep_us
  .text.sleep_ms
-                0x100012de       0x14 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x100012de                sleep_ms
- *fill*         0x100012f2        0x2 
+                0x100012ea       0x14 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x100012ea                sleep_ms
+ *fill*         0x100012fe        0x2 
  .text.best_effort_wfe_or_timeout
-                0x100012f4       0x44 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x100012f4                best_effort_wfe_or_timeout
+                0x10001300       0x44 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001300                best_effort_wfe_or_timeout
  .text.update_us_since_boot
-                0x10001338       0x24 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001344       0x24 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_irq_handler
-                0x1000135c       0x8c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001368       0x8c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x100013e8       0x18 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x100013e8                hardware_alarm_claim
+                0x100013f4       0x18 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x100013f4                hardware_alarm_claim
  .text.time_us_64
-                0x10001400       0x18 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001400                time_us_64
+                0x1000140c       0x18 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x1000140c                time_us_64
  .text.busy_wait_until
-                0x10001418       0x28 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001418                busy_wait_until
+                0x10001424       0x28 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001424                busy_wait_until
  .text.busy_wait_us
-                0x10001440       0x3a CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001440                busy_wait_us
- *fill*         0x1000147a        0x2 
+                0x1000144c       0x3a CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x1000144c                busy_wait_us
+ *fill*         0x10001486        0x2 
  .text.hardware_alarm_set_callback
-                0x1000147c       0x90 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x1000147c                hardware_alarm_set_callback
+                0x10001488       0x90 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001488                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x1000150c       0xe8 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x1000150c                hardware_alarm_set_target
+                0x10001518       0xe8 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001518                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x100015f4       0x40 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x100015f4                hardware_alarm_cancel
+                0x10001600       0x40 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001600                hardware_alarm_cancel
  .text.ph_get_node
-                0x10001634       0x30 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001640       0x30 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_add_child_node
-                0x10001664       0x6c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001670       0x6c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_merge_nodes
-                0x100016d0       0x3e CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x100016dc       0x3e CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_clear
-                0x1000170e       0x34 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x1000170e                ph_clear
+                0x1000171a       0x34 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x1000171a                ph_clear
  .text.ph_post_alloc_init
-                0x10001742        0xe CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001742                ph_post_alloc_init
+                0x1000174e        0xe CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x1000174e                ph_post_alloc_init
  .text.ph_merge_two_pass
-                0x10001750       0x5c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001750                ph_merge_two_pass
+                0x1000175c       0x5c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x1000175c                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x100017ac       0xc0 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x100017b8       0xc0 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x1000186c       0x14 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x1000186c                ph_remove_head
+                0x10001878       0x14 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001878                ph_remove_head
  .text.ph_remove_and_free_node
-                0x10001880       0xa0 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001880                ph_remove_and_free_node
+                0x1000188c       0xa0 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x1000188c                ph_remove_and_free_node
  .text.uart_disable_before_lcr_write
-                0x10001920       0x48 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x1000192c       0x48 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
  .text.uart_write_lcr_bits_masked
-                0x10001968       0x22 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- *fill*         0x1000198a        0x2 
+                0x10001974       0x22 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ *fill*         0x10001996        0x2 
  .text.uart_set_baudrate
-                0x1000198c       0x5c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                0x1000198c                uart_set_baudrate
+                0x10001998       0x5c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x10001998                uart_set_baudrate
  .text.uart_set_format
-                0x100019e8       0x2c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                0x100019e8                uart_set_format
+                0x100019f4       0x2c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x100019f4                uart_set_format
  .text.uart_set_translate_crlf
-                0x10001a14       0x28 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                0x10001a14                uart_set_translate_crlf
+                0x10001a20       0x28 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x10001a20                uart_set_translate_crlf
  .text.uart_init
-                0x10001a3c       0x80 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                0x10001a3c                uart_init
+                0x10001a48       0x80 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x10001a48                uart_init
  .text.clock_configure
-                0x10001abc      0x108 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x10001abc                clock_configure
+                0x10001ac8      0x108 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x10001ac8                clock_configure
  .text.clocks_init
-                0x10001bc4      0x100 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x10001bc4                clocks_init
+                0x10001bd0      0x100 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x10001bd0                clocks_init
  .text.clock_get_hz
-                0x10001cc4        0xc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x10001cc4                clock_get_hz
+                0x10001cd0        0xc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x10001cd0                clock_get_hz
  .text.pll_init
-                0x10001cd0      0x120 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x10001cd0                pll_init
+                0x10001cdc      0x120 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x10001cdc                pll_init
  .text.watchdog_start_tick
-                0x10001df0       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x10001df0                watchdog_start_tick
+                0x10001dfc       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x10001dfc                watchdog_start_tick
  .text.xosc_init
-                0x10001e00       0x28 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x10001e00                xosc_init
- .text._exit    0x10001e28        0x4 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001e28                _exit
- .text.exit     0x10001e2c        0x6 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001e2c                exit
- *fill*         0x10001e32        0x2 
+                0x10001e0c       0x28 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x10001e0c                xosc_init
+ .text._exit    0x10001e34        0x4 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10001e34                _exit
+ .text.exit     0x10001e38        0x6 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10001e38                exit
+ *fill*         0x10001e3e        0x2 
  .text.__assert_func
-                0x10001e34       0x38 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001e34                __assert_func
+                0x10001e40       0x38 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10001e40                __assert_func
  .text.runtime_init
-                0x10001e6c       0xf8 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001e6c                runtime_init
- .text.panic    0x10001f64       0x30 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001f64                panic
+                0x10001e78       0xf8 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10001e78                runtime_init
+ .text.panic    0x10001f70       0x30 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10001f70                panic
  .text._out_null
-                0x10001f94        0x2 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10001fa0        0x2 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_fct
-                0x10001f96        0xe CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._atoi    0x10001fa4       0x24 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10001fa2        0xe CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._atoi    0x10001fb0       0x24 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_rev
-                0x10001fc8       0xae CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10001fd4       0xae CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_format
-                0x10002076      0x110 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10002082      0x110 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_long
-                0x10002186       0xbc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10002192       0xbc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_long_long
-                0x10002242      0x10e CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._etoa    0x10002350      0x420 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._ftoa    0x10002770      0x354 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x1000224e      0x10e CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._etoa    0x1000235c      0x420 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._ftoa    0x1000277c      0x354 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._vsnprintf
-                0x10002ac4      0x668 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10002ad0      0x668 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.vfctprintf
-                0x1000312c       0x20 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x1000312c                vfctprintf
- .text          0x1000314c       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x10003138       0x20 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10003138                vfctprintf
+ .text          0x10003158       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.rom_func_lookup
-                0x1000315c       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x1000315c                rom_func_lookup
+                0x10003168       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10003168                rom_func_lookup
  .text.rom_data_lookup
-                0x1000316c       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x1000316c                rom_data_lookup
+                0x10003178       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10003178                rom_data_lookup
  .text.rom_funcs_lookup
-                0x1000317c       0x36 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x1000317c                rom_funcs_lookup
- *fill*         0x100031b2        0x2 
+                0x10003188       0x36 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10003188                rom_funcs_lookup
+ *fill*         0x100031be        0x2 
  .text.__wrap___aeabi_idiv
-                0x100031b4       0x50 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x100031b4                __wrap___aeabi_idivmod
-                0x100031b4                divmod_s32s32
-                0x100031b4                div_s32s32
-                0x100031b4                __wrap___aeabi_idiv
-                0x100031bc                divmod_s32s32_unsafe
-                0x100031e8                divmod_s32s32_savestate
+                0x100031c0       0x50 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x100031c0                __wrap___aeabi_idivmod
+                0x100031c0                divmod_s32s32
+                0x100031c0                div_s32s32
+                0x100031c0                __wrap___aeabi_idiv
+                0x100031c8                divmod_s32s32_unsafe
+                0x100031f4                divmod_s32s32_savestate
  .text.__wrap___aeabi_uidiv
-                0x10003204       0x4c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x10003204                __wrap___aeabi_uidiv
-                0x10003204                __wrap___aeabi_uidivmod
-                0x10003204                div_u32u32
-                0x10003204                divmod_u32u32
-                0x1000320c                divmod_u32u32_unsafe
-                0x10003234                divmod_u32u32_savestate
+                0x10003210       0x4c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x10003210                __wrap___aeabi_uidiv
+                0x10003210                __wrap___aeabi_uidivmod
+                0x10003210                div_u32u32
+                0x10003210                divmod_u32u32
+                0x10003218                divmod_u32u32_unsafe
+                0x10003240                divmod_u32u32_savestate
  .text.__wrap___aeabi_ldiv
-                0x10003250      0x424 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x10003250                __wrap___aeabi_ldivmod
-                0x10003250                div_s64s64
-                0x10003250                divmod_s64s64
-                0x10003280                divmod_u64u64
-                0x10003280                div_u64u64
-                0x10003280                __wrap___aeabi_uldivmod
-                0x10003290                divmod_u64u64_savestate
-                0x100032b0                divmod_s64s64_unsafe
-                0x10003338                divmod_u64u64_unsafe
+                0x1000325c      0x424 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x1000325c                __wrap___aeabi_ldivmod
+                0x1000325c                div_s64s64
+                0x1000325c                divmod_s64s64
+                0x1000328c                divmod_u64u64
+                0x1000328c                div_u64u64
+                0x1000328c                __wrap___aeabi_uldivmod
+                0x1000329c                divmod_u64u64_savestate
+                0x100032bc                divmod_s64s64_unsafe
+                0x10003344                divmod_u64u64_unsafe
  .text.push_r8_r11
-                0x10003674        0xc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003674                push_r8_r11
- .text.pop_r8_r11
                 0x10003680        0xc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003680                pop_r8_r11
+                0x10003680                push_r8_r11
+ .text.pop_r8_r11
+                0x1000368c        0xc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x1000368c                pop_r8_r11
  .text.__wrap___aeabi_darithmetic
-                0x1000368c       0x80 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x1000368c                __wrap___aeabi_drsub
-                0x10003692                __wrap___aeabi_dsub
-                0x100036a4                __wrap___aeabi_dadd
-                0x100036b6                __wrap___aeabi_ddiv
-                0x100036f2                __wrap___aeabi_dmul
+                0x10003698       0x80 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003698                __wrap___aeabi_drsub
+                0x1000369e                __wrap___aeabi_dsub
+                0x100036b0                __wrap___aeabi_dadd
+                0x100036c2                __wrap___aeabi_ddiv
+                0x100036fe                __wrap___aeabi_dmul
  .text.__wrap___aeabi_cdcmple
-                0x1000370c       0x6c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x1000370c                __wrap___aeabi_cdrcmple
-                0x1000371c                __wrap___aeabi_cdcmple
-                0x1000371c                __wrap___aeabi_cdcmpeq
+                0x10003718       0x6c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003718                __wrap___aeabi_cdrcmple
+                0x10003728                __wrap___aeabi_cdcmple
+                0x10003728                __wrap___aeabi_cdcmpeq
  .text.__wrap___aeabi_dcmplt
-                0x10003778        0xc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003778                __wrap___aeabi_dcmplt
+                0x10003784        0xc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003784                __wrap___aeabi_dcmplt
  .text.__wrap___aeabi_dcmple
-                0x10003784       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003784                __wrap___aeabi_dcmple
+                0x10003790       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003790                __wrap___aeabi_dcmple
  .text.__wrap___aeabi_dcmpge
-                0x10003794       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003794                __wrap___aeabi_dcmpge
+                0x100037a0       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x100037a0                __wrap___aeabi_dcmpge
  .text.__wrap___aeabi_dcmpgt
-                0x100037a4        0xa CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x100037a4                __wrap___aeabi_dcmpgt
+                0x100037b0        0xa CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x100037b0                __wrap___aeabi_dcmpgt
  .text.__wrap___aeabi_dcmpun
-                0x100037ae       0x1c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x100037ae                __wrap___aeabi_dcmpun
- *fill*         0x100037ca        0x2 
+                0x100037ba       0x1c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x100037ba                __wrap___aeabi_dcmpun
+ *fill*         0x100037d6        0x2 
  .text.__wrap___aeabi_i2d
-                0x100037cc       0x38 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x100037cc                __wrap___aeabi_ui2d
-                0x100037d4                __wrap___aeabi_i2d
+                0x100037d8       0x38 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x100037d8                __wrap___aeabi_ui2d
+                0x100037e0                __wrap___aeabi_i2d
  .text.__wrap___aeabi_d2iz
-                0x10003804       0x48 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003804                __wrap___aeabi_d2iz
-                0x10003804                double2int_z
+                0x10003810       0x48 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003810                __wrap___aeabi_d2iz
+                0x10003810                double2int_z
  .text.__wrap___aeabi_d2uiz
-                0x1000384c       0x18 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x1000384c                double2uint
-                0x1000384c                __wrap___aeabi_d2uiz
+                0x10003858       0x18 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003858                double2uint
+                0x10003858                __wrap___aeabi_d2uiz
  .text.fix642double
-                0x10003864       0x18 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003864                fix642double
+                0x10003870       0x18 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003870                fix642double
  .text.__wrap___aeabi_d2f
-                0x1000387c       0x18 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x1000387c                __wrap___aeabi_d2f
+                0x10003888       0x18 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003888                __wrap___aeabi_d2f
  .text.__wrap_sincostan_remainder
-                0x10003894       0x14 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003894                sincostan_remainder
+                0x100038a0       0x14 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x100038a0                sincostan_remainder
  .text.__wrap_sin
-                0x100038a8       0x2c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x100038a8                __wrap_sin
+                0x100038b4       0x2c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x100038b4                __wrap_sin
  .text.__aeabi_double_init
-                0x100038d4       0xcc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x100038d4                __aeabi_double_init
- .text.drem_0   0x100039a0      0x122 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
- *fill*         0x10003ac2        0x2 
+                0x100038e0       0xcc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x100038e0                __aeabi_double_init
+ .text.drem_0   0x100039ac      0x122 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+ *fill*         0x10003ace        0x2 
  .text.__wrap_remquo
-                0x10003ac4      0x164 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
-                0x10003ac4                __wrap_remquo
+                0x10003ad0      0x164 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+                0x10003ad0                __wrap_remquo
  .text.__wrap_remainder
-                0x10003c28       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
-                0x10003c28                __wrap_remainder
+                0x10003c34       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+                0x10003c34                __wrap_remainder
  .text.double_table_shim_on_use_helper
-                0x10003c38       0x34 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10003c38                double_table_shim_on_use_helper
+                0x10003c44       0x34 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10003c44                double_table_shim_on_use_helper
  .text.__wrap___aeabi_dsub
-                0x10003c6c       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10003c6c                drsub_shim
-                0x10003c72                dsub_shim
+                0x10003c78       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10003c78                drsub_shim
+                0x10003c7e                dsub_shim
  .text.dadd_shim
-                0x10003c7c      0x15c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10003c7c                dadd_shim
+                0x10003c88      0x15c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10003c88                dadd_shim
  .text.dmul_shim
-                0x10003dd8      0x15c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10003dd8                dmul_shim
+                0x10003de4      0x15c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10003de4                dmul_shim
  .text.ddiv_shim
-                0x10003f34      0x1b0 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10003f34                ddiv_shim
+                0x10003f40      0x1b0 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10003f40                ddiv_shim
  .text.dcordic_vec_step
-                0x100040e4        0xe CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x100040e4                dcordic_vec_step
+                0x100040f0        0xe CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x100040f0                dcordic_vec_step
  .text.dcordic_rot_step
-                0x100040f2       0x76 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x100040f2                dcordic_rot_step
+                0x100040fe       0x76 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x100040fe                dcordic_rot_step
  .text.double2uint_shim
-                0x10004168        0xe CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10004168                double2uint_shim
-                0x1000416a                double2ufix_shim
+                0x10004174        0xe CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10004174                double2uint_shim
+                0x10004176                double2ufix_shim
  .text.double2int64_shim
-                0x10004176       0x1a CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10004176                double2int64_shim
-                0x10004178                double2fix64_shim
+                0x10004182       0x1a CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10004182                double2int64_shim
+                0x10004184                double2fix64_shim
  .text.double2uint64_shim
-                0x10004190       0x70 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10004190                double2uint64_shim
-                0x10004192                double2ufix64_shim
-                0x100041b2                d2fix_a
+                0x1000419c       0x70 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x1000419c                double2uint64_shim
+                0x1000419e                double2ufix64_shim
+                0x100041be                d2fix_a
  .text.double2float_shim
-                0x10004200       0x5c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10004200                double2float_shim
+                0x1000420c       0x5c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x1000420c                double2float_shim
  .text.x2double_shims
-                0x1000425c       0x90 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x1000425c                uint2double_shim
-                0x1000425e                ufix2double_shim
-                0x10004264                int2double_shim
-                0x10004266                fix2double_shim
-                0x1000426c                uint642double_shim
-                0x1000426e                ufix642double_shim
-                0x10004274                int642double_shim
-                0x10004276                fix642double_shim
+                0x10004268       0x90 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10004268                uint2double_shim
+                0x1000426a                ufix2double_shim
+                0x10004270                int2double_shim
+                0x10004272                fix2double_shim
+                0x10004278                uint642double_shim
+                0x1000427a                ufix642double_shim
+                0x10004280                int642double_shim
+                0x10004282                fix642double_shim
  .text.dunpacks
-                0x100042ec       0x3c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x100042ec                dunpacks
- .text.dreduce  0x10004328       0x82 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10004328                dreduce
+                0x100042f8       0x3c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x100042f8                dunpacks
+ .text.dreduce  0x10004334       0x82 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10004334                dreduce
  .text.dsin_shim
-                0x100043aa       0x14 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x100043aa                dsin_shim
- *fill*         0x100043be        0x2 
+                0x100043b6       0x14 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x100043b6                dsin_shim
+ *fill*         0x100043ca        0x2 
  .text.dtrig_guts
-                0x100043c0      0x2ec CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10004498                datan2_shim
+                0x100043cc      0x2ec CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x100044a4                datan2_shim
  .text.__aeabi_lmul
-                0x100046ac       0x32 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-                0x100046ac                __wrap___aeabi_lmul
- *fill*         0x100046de        0x2 
+                0x100046b8       0x32 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+                0x100046b8                __wrap___aeabi_lmul
+ *fill*         0x100046ea        0x2 
  .text.__wrap___aeabi_i2f
-                0x100046e0       0x44 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x100046e0                __wrap___aeabi_i2f
+                0x100046ec       0x44 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x100046ec                __wrap___aeabi_i2f
  .text.__wrap___aeabi_f2iz
-                0x10004724       0x4e CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x10004724                __wrap___aeabi_f2iz
-                0x10004724                float2int_z
- *fill*         0x10004772        0x2 
+                0x10004730       0x4e CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x10004730                __wrap___aeabi_f2iz
+                0x10004730                float2int_z
+ *fill*         0x1000477e        0x2 
  .text.float2int
-                0x10004774       0x14 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x10004774                float2int
+                0x10004780       0x14 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x10004780                float2int
  .text.__wrap___aeabi_f2uiz
-                0x10004788       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x10004788                __wrap___aeabi_f2uiz
+                0x10004794       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x10004794                __wrap___aeabi_f2uiz
  .text.__wrap___aeabi_f2d
-                0x10004798       0x14 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x10004798                __wrap___aeabi_f2d
+                0x100047a4       0x14 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x100047a4                __wrap___aeabi_f2d
  .text.__aeabi_float_init
-                0x100047ac       0xfc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x100047ac                __aeabi_float_init
+                0x100047b8       0xfc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x100047b8                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x100048a8       0x34 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x100048a8                float_table_shim_on_use_helper
+                0x100048b4       0x34 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x100048b4                float_table_shim_on_use_helper
  .text.float232_shims
-                0x100048dc       0x18 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x100048dc                float2int_shim
-                0x100048de                float2fix_shim
+                0x100048e8       0x18 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x100048e8                float2int_shim
+                0x100048ea                float2fix_shim
  .text.float2double_shim
-                0x100048f4       0x30 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x100048f4                float2double_shim
- .text          0x10004924       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x10004924                __aeabi_mem_init
- .text.memcpy   0x10004934        0xc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x10004934                __wrap___aeabi_memcpy
-                0x10004934                __wrap_memcpy
+                0x10004900       0x30 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x10004900                float2double_shim
+ .text          0x10004930       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x10004930                __aeabi_mem_init
+ .text.memcpy   0x10004940        0xc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x10004940                __wrap___aeabi_memcpy
+                0x10004940                __wrap_memcpy
  .text.stdio_out_chars_no_crlf
-                0x10004940        0xe CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x1000494e        0x2 
+                0x1000494c        0xe CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x1000495a        0x2 
  .text.stdio_out_chars_crlf
-                0x10004950       0x80 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x1000495c       0x80 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_stack_buffer_flush
-                0x100049d0       0x44 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100049dc       0x44 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_buffered_printer
-                0x10004a14       0x20 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004a20       0x20 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.update_us_since_boot
-                0x10004a34       0x24 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004a40       0x24 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.get_absolute_time
-                0x10004a58       0x22 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x10004a7a        0x2 
+                0x10004a64       0x22 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x10004a86        0x2 
  .text.delayed_by_ms
-                0x10004a7c       0x44 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004a88       0x44 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.make_timeout_time_ms
-                0x10004ac0       0x20 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004acc       0x20 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdout_serialize_begin
-                0x10004ae0       0x20 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004ae0                stdout_serialize_begin
+                0x10004aec       0x20 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004aec                stdout_serialize_begin
  .text.stdout_serialize_end
-                0x10004b00       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004b00                stdout_serialize_end
+                0x10004b0c       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004b0c                stdout_serialize_end
  .text.stdio_put_string
-                0x10004b10       0x98 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004b1c       0x98 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_set_driver_enabled
-                0x10004ba8       0x2c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004ba8                stdio_set_driver_enabled
+                0x10004bb4       0x2c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004bb4                stdio_set_driver_enabled
  .text.stdio_flush
-                0x10004bd4       0x20 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004bd4                stdio_flush
+                0x10004be0       0x20 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004be0                stdio_flush
  .text.__wrap_puts
-                0x10004bf4       0x1e CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004bf4                __wrap_puts
- *fill*         0x10004c12        0x2 
+                0x10004c00       0x1e CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004c00                __wrap_puts
+ *fill*         0x10004c1e        0x2 
  .text.__wrap_vprintf
-                0x10004c14       0x40 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004c14                __wrap_vprintf
+                0x10004c20       0x40 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004c20                __wrap_vprintf
  .text.__wrap_printf
-                0x10004c54       0x18 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004c54                __wrap_printf
+                0x10004c60       0x18 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004c60                __wrap_printf
  .text.stdio_init_all
-                0x10004c6c        0xa CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004c6c                stdio_init_all
- *fill*         0x10004c76        0x2 
+                0x10004c78        0xa CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004c78                stdio_init_all
+ *fill*         0x10004c82        0x2 
  .text.uart_putc
-                0x10004c78       0x60 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10004c84       0x60 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.uart_getc
-                0x10004cd8       0x24 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10004ce4       0x24 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_out_chars
-                0x10004cfc       0x20 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10004d08       0x20 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_in_chars
-                0x10004d1c       0x5c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x10004d1c                stdio_uart_in_chars
+                0x10004d28       0x5c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10004d28                stdio_uart_in_chars
  .text.on_uart_rx
-                0x10004d78       0x28 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10004d84       0x28 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_set_chars_available_callback
-                0x10004da0       0x8c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10004dac       0x8c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_init_full
-                0x10004e2c       0x44 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x10004e2c                stdio_uart_init_full
+                0x10004e38       0x44 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10004e38                stdio_uart_init_full
  .text.stdio_uart_init
-                0x10004e70       0x28 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x10004e70                stdio_uart_init
+                0x10004e7c       0x28 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10004e7c                stdio_uart_init
  .text.spi_set_baudrate
-                0x10004e98       0xc2 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
-                0x10004e98                spi_set_baudrate
- *fill*         0x10004f5a        0x2 
+                0x10004ea4       0xc2 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+                0x10004ea4                spi_set_baudrate
+ *fill*         0x10004f66        0x2 
  .text.spi_init
-                0x10004f5c       0x74 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
-                0x10004f5c                spi_init
- .text.strlen   0x10004fd0       0x5c /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
-                0x10004fd0                strlen
+                0x10004f68       0x74 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+                0x10004f68                spi_init
+ .text.strlen   0x10004fdc       0x5c /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
+                0x10004fdc                strlen
  *(.fini)
- .fini          0x1000502c        0x4 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crti.o
-                0x1000502c                _fini
- .fini.__stub   0x10005030       0x50 linker stubs
+ .fini          0x10005038        0x4 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crti.o
+                0x10005038                _fini
+ *fill*         0x1000503c        0x4 
+ .fini.__stub   0x10005040       0x50 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -2170,252 +2171,252 @@ LOAD /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-no
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x10005080        0x0 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x10005080                        . = ALIGN (0x4)
+ .eh_frame      0x10005090        0x0 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x10005090                        . = ALIGN (0x4)
 
-.glue_7         0x10005080        0x0
- .glue_7        0x10005080        0x0 linker stubs
+.glue_7         0x10005090        0x0
+ .glue_7        0x10005090        0x0 linker stubs
 
-.glue_7t        0x10005080        0x0
- .glue_7t       0x10005080        0x0 linker stubs
+.glue_7t        0x10005090        0x0
+ .glue_7t       0x10005090        0x0 linker stubs
 
-.vfp11_veneer   0x10005080        0x0
- .vfp11_veneer  0x10005080        0x0 linker stubs
+.vfp11_veneer   0x10005090        0x0
+ .vfp11_veneer  0x10005090        0x0 linker stubs
 
-.v4_bx          0x10005080        0x0
- .v4_bx         0x10005080        0x0 linker stubs
+.v4_bx          0x10005090        0x0
+ .v4_bx         0x10005090        0x0 linker stubs
 
-.iplt           0x10005080        0x0
- .iplt          0x10005080        0x0 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x10005090        0x0
+ .iplt          0x10005090        0x0 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x10005080      0xebc
+.rodata         0x10005090      0xebc
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
- .rodata.__bi_231.0
-                0x10005080        0x8 CMakeFiles/mcp4912_spi.dir/mcp4912_spi.c.obj
+ .rodata.__bi_79.0
+                0x10005090        0x8 CMakeFiles/mcp4912_spi.dir/mcp4912_spi.c.obj
  .rodata.str1.4
-                0x10005088      0xa10 CMakeFiles/mcp4912_spi.dir/mcp4912_spi.c.obj
+                0x10005098      0xa10 CMakeFiles/mcp4912_spi.dir/mcp4912_spi.c.obj
                                   0x7 (size before relaxing)
- .rodata.__bi_238.1
-                0x10005a98        0xc CMakeFiles/mcp4912_spi.dir/mcp4912_spi.c.obj
+ .rodata.__bi_86.1
+                0x10005aa8        0xc CMakeFiles/mcp4912_spi.dir/mcp4912_spi.c.obj
  .rodata.resolve_branch.str1.4
-                0x10005aa4       0x5f CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10005ab4       0x5f CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .rodata.make_branch.str1.4
-                0x10005aa4       0x30 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10005ab4       0x30 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .rodata.insert_branch_and_link.str1.4
-                0x10005aa4       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10005ab4       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .rodata.irq_set_exclusive_handler.str1.4
-                0x10005aa4       0x36 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10005ab4       0x36 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .rodata.irq_remove_handler.str1.4
-                0x10005aa4       0x3a CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10005ab4       0x3a CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .rodata.irq_add_tail_to_free_list.str1.4
-                0x10005aa4       0x3a CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10005ab4       0x3a CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .rodata.__func__.0
-                0x10005aa4       0x1a CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10005abe        0x2 
+                0x10005ab4       0x1a CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10005ace        0x2 
  .rodata.__func__.1
-                0x10005ac0       0x17 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10005ad7        0x1 
+                0x10005ad0       0x17 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10005ae7        0x1 
  .rodata.__func__.2
-                0x10005ad8       0x13 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10005aeb        0x1 
+                0x10005ae8       0x13 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10005afb        0x1 
  .rodata.__func__.3
-                0x10005aec        0xc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10005afc        0xc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .rodata.__func__.4
-                0x10005af8        0xf CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10005b07        0x1 
+                0x10005b08        0xf CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10005b17        0x1 
  .rodata.__func__.6
-                0x10005b08       0x1a CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10005b18       0x1a CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .rodata.str1.4
-                0x10005b22       0x95 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- *fill*         0x10005b22        0x2 
+                0x10005b32       0x95 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ *fill*         0x10005b32        0x2 
  .rodata.__func__.1
-                0x10005b24        0xb CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- *fill*         0x10005b2f        0x1 
+                0x10005b34        0xb CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ *fill*         0x10005b3f        0x1 
  .rodata.__func__.3
-                0x10005b30       0x18 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x10005b40       0x18 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
  .rodata.get_entry.str1.4
-                0x10005b48       0x65 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10005b58       0x65 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.update_us_since_boot.str1.4
-                0x10005b48       0x6b CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10005b58       0x6b CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.ph_get_node.str1.4
-                0x10005b48       0x70 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10005b58       0x70 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.ph_add_child_node.str1.4
-                0x10005b48       0x2e CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10005b58       0x2e CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.ph_insert_node.str1.4
-                0x10005b48        0x3 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10005b58        0x3 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.ph_free_node.str1.4
-                0x10005b48       0x38 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10005b58       0x38 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.add_alarm_under_lock.str1.4
-                0x10005b48       0x28 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10005b58       0x28 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.alarm_pool_alarm_callback.str1.4
-                0x10005b48       0x60 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10005b58       0x60 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.alarm_pool_get_default.str1.4
-                0x10005b48       0x21 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10005b58       0x21 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.alarm_pool_cancel_alarm.str1.4
-                0x10005b48       0x27 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10005b58       0x27 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.sleep_until.str1.4
-                0x10005b48       0x4d CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10005b58       0x4d CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.__func__.1
-                0x10005b48       0x18 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10005b58       0x18 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.__func__.3
-                0x10005b60       0x17 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10005b77        0x1 
+                0x10005b70       0x17 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10005b87        0x1 
  .rodata.__func__.4
-                0x10005b78       0x12 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10005b8a        0x2 
+                0x10005b88       0x12 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10005b9a        0x2 
  .rodata.__func__.5
-                0x10005b8c        0xd CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10005b99        0x3 
+                0x10005b9c        0xd CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10005ba9        0x3 
  .rodata.__func__.6
-                0x10005b9c       0x12 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10005bae        0x2 
+                0x10005bac       0x12 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10005bbe        0x2 
  .rodata.__func__.7
-                0x10005bb0        0xf CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10005bbf        0x1 
+                0x10005bc0        0xf CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10005bcf        0x1 
  .rodata.__func__.8
-                0x10005bc0        0xc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10005bd0        0xc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.__func__.9
-                0x10005bcc       0x15 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10005be1        0x3 
+                0x10005bdc       0x15 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10005bf1        0x3 
  .rodata.__func__.10
-                0x10005be4       0x15 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10005bf9        0x3 
+                0x10005bf4       0x15 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10005c09        0x3 
  .rodata.__func__.11
-                0x10005bfc       0x1a CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10005c16        0x2 
+                0x10005c0c       0x1a CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10005c26        0x2 
  .rodata.__func__.12
-                0x10005c18        0xa CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10005c28        0xa CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.update_us_since_boot.str1.4
-                0x10005c22       0x6b CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10005c32       0x6b CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .rodata.hardware_alarm_claim.str1.4
-                0x10005c22       0x22 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10005c32       0x22 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .rodata.hardware_alarm_set_target.str1.4
-                0x10005c22       0x6f CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x10005c22        0x2 
+                0x10005c32       0x6f CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x10005c32        0x2 
  .rodata.__func__.0
-                0x10005c24       0x1a CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x10005c3e        0x2 
+                0x10005c34       0x1a CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x10005c4e        0x2 
  .rodata.__func__.1
-                0x10005c40       0x15 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10005c50       0x15 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .rodata.ph_get_node.str1.4
-                0x10005c55       0x70 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10005c65       0x70 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .rodata.ph_add_child_node.str1.4
-                0x10005c55       0x2e CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10005c65       0x2e CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .rodata.ph_remove_any_head.str1.4
-                0x10005c55       0xac CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10005c65       0xac CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .rodata.ph_remove_and_free_node.str1.4
-                0x10005c55       0x26 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
- *fill*         0x10005c55        0x3 
+                0x10005c65       0x26 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ *fill*         0x10005c65        0x3 
  .rodata.__func__.0
-                0x10005c58       0x18 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10005c68       0x18 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .rodata.__func__.1
-                0x10005c70       0x13 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
- *fill*         0x10005c83        0x1 
+                0x10005c80       0x13 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ *fill*         0x10005c93        0x1 
  .rodata.__func__.2
-                0x10005c84       0x12 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
- *fill*         0x10005c96        0x2 
+                0x10005c94       0x12 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ *fill*         0x10005ca6        0x2 
  .rodata.__func__.3
-                0x10005c98        0xc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10005ca8        0xc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .rodata.clock_configure.str1.4
-                0x10005ca4       0x61 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x10005cb4       0x61 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .rodata.__func__.1
-                0x10005ca4       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x10005cb4       0x10 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .rodata.pll_init.str1.4
-                0x10005cb4      0x12c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x10005cc4      0x12c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
  .rodata.__func__.0
-                0x10005cb4        0x9 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x10005cc4        0x9 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
  .rodata.__assert_func.str1.4
-                0x10005cbd       0x43 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10005ccd       0x43 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata.runtime_init.str1.4
-                0x10005cbd       0x6b CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10005ccd       0x6b CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata.panic.str1.4
-                0x10005cbd       0x12 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x10005cbd        0x3 
- .rodata.__func__.2
-                0x10005cc0        0xd CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .rodata._ftoa.str1.4
-                0x10005ccd       0x15 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10005ccd       0x12 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  *fill*         0x10005ccd        0x3 
+ .rodata.__func__.2
+                0x10005cd0        0xd CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .rodata._ftoa.str1.4
+                0x10005cdd       0x15 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x10005cdd        0x3 
  .rodata._vsnprintf
-                0x10005cd0      0x19c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x10005e6c        0x4 
+                0x10005ce0      0x19c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x10005e7c        0x4 
  .rodata.pow10.0
-                0x10005e70       0x50 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10005e80       0x50 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata.__aeabi_double_init.str1.4
-                0x10005ec0       0xa6 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x10005ed0       0xa6 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
  .rodata.__func__.0
-                0x10005ec0       0x14 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x10005ed0       0x14 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
  .rodata.__aeabi_float_init.str1.4
-                0x10005ed4       0x88 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x10005ee4       0x88 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
  .rodata.__func__.0
-                0x10005ed4       0x13 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x10005ee4       0x13 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
  .rodata.str1.4
-                0x10005ee7       0x40 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- *fill*         0x10005ee7        0x1 
+                0x10005ef7       0x40 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ *fill*         0x10005ef7        0x1 
  .rodata.__bi_81
-                0x10005ee8        0xc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10005ef8        0xc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x10005ef4        0xc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10005f04        0xc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_44
-                0x10005f00        0xc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10005f10        0xc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.update_us_since_boot.str1.4
-                0x10005f0c       0x6b CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10005f1c       0x6b CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .rodata.crlf_str.2
-                0x10005f0c        0x2 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x10005f0e        0x2 
+                0x10005f1c        0x2 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x10005f1e        0x2 
  .rodata.__func__.3
-                0x10005f10       0x15 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10005f20       0x15 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .rodata.str1.4
-                0x10005f25       0x2c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- *fill*         0x10005f25        0x3 
+                0x10005f35       0x2c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ *fill*         0x10005f35        0x3 
  .rodata.__bi_33.4
-                0x10005f28        0xc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10005f38        0xc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_34.5
-                0x10005f34        0x8 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x10005f3c                        . = ALIGN (0x4)
+                0x10005f44        0x8 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10005f4c                        . = ALIGN (0x4)
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x10005f3c                        . = ALIGN (0x4)
+                0x10005f4c                        . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x10005f3c                        __exidx_start = .
+                0x10005f4c                        __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x10005f3c                        __exidx_end = .
-                0x10005f3c                        . = ALIGN (0x4)
-                0x10005f3c                        __binary_info_start = .
+                0x10005f4c                        __exidx_end = .
+                0x10005f4c                        . = ALIGN (0x4)
+                0x10005f4c                        __binary_info_start = .
 
-.binary_info    0x10005f3c       0x2c
+.binary_info    0x10005f4c       0x2c
  *(.binary_info.keep.*)
- .binary_info.keep.__bi_ptr238
-                0x10005f3c        0x4 CMakeFiles/mcp4912_spi.dir/mcp4912_spi.c.obj
- .binary_info.keep.__bi_ptr231
-                0x10005f40        0x4 CMakeFiles/mcp4912_spi.dir/mcp4912_spi.c.obj
+ .binary_info.keep.__bi_ptr86
+                0x10005f4c        0x4 CMakeFiles/mcp4912_spi.dir/mcp4912_spi.c.obj
+ .binary_info.keep.__bi_ptr79
+                0x10005f50        0x4 CMakeFiles/mcp4912_spi.dir/mcp4912_spi.c.obj
  .binary_info.keep.__bi_ptr81
-                0x10005f44        0x4 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr75
-                0x10005f48        0x4 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr50
-                0x10005f4c        0x4 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr44
-                0x10005f50        0x4 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr38
                 0x10005f54        0x4 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr30
+ .binary_info.keep.__bi_ptr75
                 0x10005f58        0x4 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr22
+ .binary_info.keep.__bi_ptr50
                 0x10005f5c        0x4 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .binary_info.keep.__bi_ptr44
+                0x10005f60        0x4 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .binary_info.keep.__bi_ptr38
+                0x10005f64        0x4 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .binary_info.keep.__bi_ptr30
+                0x10005f68        0x4 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .binary_info.keep.__bi_ptr22
+                0x10005f6c        0x4 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  *(.binary_info.*)
  .binary_info.__bi_ptr34
-                0x10005f60        0x4 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10005f70        0x4 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .binary_info.__bi_ptr33
-                0x10005f64        0x4 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x10005f68                        __binary_info_end = .
+                0x10005f74        0x4 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10005f78                        __binary_info_end = .
 
-.rel.dyn        0x10005f68        0x0
- .rel.iplt      0x10005f68        0x0 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x10005f68                        . = ALIGN (0x4)
+.rel.dyn        0x10005f78        0x0
+ .rel.iplt      0x10005f78        0x0 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x10005f78                        . = ALIGN (0x4)
 
 .ram_vector_table
                 0x20000000       0xc0
@@ -2424,7 +2425,7 @@ LOAD /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-no
                 0x20000000       0xc0 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x20000000                ram_vector_table
 
-.data           0x200000c0      0x284 load address 0x10005f68
+.data           0x200000c0      0x284 load address 0x10005f78
                 0x200000c0                        __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -2513,36 +2514,36 @@ LOAD /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-no
  *(.jcr)
                 0x20000344                        . = ALIGN (0x4)
                 0x20000344                        __data_end__ = .
-                0x10005f68                        __etext = LOADADDR (.data)
+                0x10005f78                        __etext = LOADADDR (.data)
 
 .tm_clone_table
-                0x20000344        0x0 load address 0x100061ec
+                0x20000344        0x0 load address 0x100061fc
  .tm_clone_table
                 0x20000344        0x0 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x20000344        0x0 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x20000344        0x0 load address 0x100061ec
+.igot.plt       0x20000344        0x0 load address 0x100061fc
  .igot.plt      0x20000344        0x0 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x20000344        0x0 load address 0x100061ec
+                0x20000344        0x0 load address 0x100061fc
                 0x20000344                        . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x20040000        0x0 load address 0x100061ec
+.scratch_x      0x20040000        0x0 load address 0x100061fc
                 0x20040000                        __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x20040000                        . = ALIGN (0x4)
                 0x20040000                        __scratch_x_end__ = .
-                0x100061ec                        __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x100061fc                        __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20041000        0x0 load address 0x100061ec
+.scratch_y      0x20041000        0x0 load address 0x100061fc
                 0x20041000                        __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20041000                        . = ALIGN (0x4)
                 0x20041000                        __scratch_y_end__ = .
-                0x100061ec                        __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x100061fc                        __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .bss            0x20000348      0x3d4
                 0x20000348                        . = ALIGN (0x4)
@@ -2606,8 +2607,8 @@ LOAD /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-no
  *(.stack*)
  .stack         0x20041000      0x800 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x100061ec        0x0
-                0x100061ec                        PROVIDE (__flash_binary_end = .)
+.flash_end      0x100061fc        0x0
+                0x100061fc                        PROVIDE (__flash_binary_end = .)
                 0x20040000                        __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20041000                        __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20042000                        __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -2663,7 +2664,7 @@ LOAD CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_comm
 LOAD CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 LOAD CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 LOAD CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
-LOAD /var/folders/l7/cb0xcf750d14ygxsby8ykcy40000gn/T//ccAbmMyo.o
+LOAD /var/folders/l7/cb0xcf750d14ygxsby8ykcy40000gn/T//cc2975Y2.o
 LOAD /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -2760,7 +2761,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x000005ea       0x2c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
  .ARM.attributes
-                0x00000616       0x22 /var/folders/l7/cb0xcf750d14ygxsby8ykcy40000gn/T//ccAbmMyo.o
+                0x00000616       0x22 /var/folders/l7/cb0xcf750d14ygxsby8ykcy40000gn/T//cc2975Y2.o
  .ARM.attributes
                 0x00000638       0x1e /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
@@ -2797,79 +2798,79 @@ LOAD linker stubs
  .comment       0x00000044       0x45 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .comment       0x00000044       0x45 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
 
-.debug_info     0x00000000    0x19a15
- .debug_info    0x00000000      0xc8e CMakeFiles/mcp4912_spi.dir/mcp4912_spi.c.obj
- .debug_info    0x00000c8e     0x184b CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_info    0x000024d9      0x1fb CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_info    0x000026d4      0x69a CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_info    0x00002d6e      0x5fa CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_info    0x00003368     0x1c43 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_info    0x00004fab      0x1a3 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_info    0x0000514e     0x1d29 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_info    0x00006e77     0x33f9 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_info    0x0000a270     0x145b CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_info    0x0000b6cb      0xe82 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_info    0x0000c54d      0xd98 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_info    0x0000d2e5      0xfe7 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_info    0x0000e2cc      0x505 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_info    0x0000e7d1      0x4d8 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_info    0x0000eca9      0x1c7 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_info    0x0000ee70      0xf23 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_info    0x0000fd93     0x19db CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_info    0x0001176e       0x23 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_info    0x00011791      0x331 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_info    0x00011ac2       0x23 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_info    0x00011ae5       0x23 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_info    0x00011b08      0x33b CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_info    0x00011e43     0x3bec CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
- .debug_info    0x00015a2f       0x23 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_info    0x00015a52       0x24 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_info    0x00015a76       0x23 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_info    0x00015a99      0x34f CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_info    0x00015de8       0x23 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_info    0x00015e0b       0x23 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_info    0x00015e2e       0x23 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_info    0x00015e51      0x2b8 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_info    0x00016109     0x1743 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_info    0x0001784c     0x1035 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .debug_info    0x00018881     0x1194 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+.debug_info     0x00000000    0x19a34
+ .debug_info    0x00000000      0xcad CMakeFiles/mcp4912_spi.dir/mcp4912_spi.c.obj
+ .debug_info    0x00000cad     0x184b CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_info    0x000024f8      0x1fb CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_info    0x000026f3      0x69a CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_info    0x00002d8d      0x5fa CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_info    0x00003387     0x1c43 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_info    0x00004fca      0x1a3 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_info    0x0000516d     0x1d29 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_info    0x00006e96     0x33f9 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_info    0x0000a28f     0x145b CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_info    0x0000b6ea      0xe82 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_info    0x0000c56c      0xd98 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_info    0x0000d304      0xfe7 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_info    0x0000e2eb      0x505 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_info    0x0000e7f0      0x4d8 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_info    0x0000ecc8      0x1c7 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_info    0x0000ee8f      0xf23 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_info    0x0000fdb2     0x19db CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_info    0x0001178d       0x23 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_info    0x000117b0      0x331 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_info    0x00011ae1       0x23 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_info    0x00011b04       0x23 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_info    0x00011b27      0x33b CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_info    0x00011e62     0x3bec CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+ .debug_info    0x00015a4e       0x23 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_info    0x00015a71       0x24 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_info    0x00015a95       0x23 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_info    0x00015ab8      0x34f CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_info    0x00015e07       0x23 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_info    0x00015e2a       0x23 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_info    0x00015e4d       0x23 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_info    0x00015e70      0x2b8 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_info    0x00016128     0x1743 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_info    0x0001786b     0x1035 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ .debug_info    0x000188a0     0x1194 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
 
-.debug_abbrev   0x00000000     0x4cb1
- .debug_abbrev  0x00000000      0x31f CMakeFiles/mcp4912_spi.dir/mcp4912_spi.c.obj
- .debug_abbrev  0x0000031f      0x3a6 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_abbrev  0x000006c5       0xf8 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_abbrev  0x000007bd      0x2ce CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_abbrev  0x00000a8b      0x249 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_abbrev  0x00000cd4      0x500 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_abbrev  0x000011d4      0x116 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_abbrev  0x000012ea      0x3f1 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_abbrev  0x000016db      0x5c3 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_abbrev  0x00001c9e      0x3d5 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_abbrev  0x00002073      0x290 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_abbrev  0x00002303      0x349 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_abbrev  0x0000264c      0x434 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_abbrev  0x00002a80      0x1e7 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_abbrev  0x00002c67      0x1a8 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_abbrev  0x00002e0f      0x10c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_abbrev  0x00002f1b      0x530 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_abbrev  0x0000344b      0x371 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_abbrev  0x000037bc       0x12 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_abbrev  0x000037ce      0x167 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_abbrev  0x00003935       0x12 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_abbrev  0x00003947       0x12 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_abbrev  0x00003959      0x1c3 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_abbrev  0x00003b1c      0x2b3 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
- .debug_abbrev  0x00003dcf       0x12 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_abbrev  0x00003de1       0x14 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_abbrev  0x00003df5       0x12 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_abbrev  0x00003e07      0x1c6 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_abbrev  0x00003fcd       0x12 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_abbrev  0x00003fdf       0x12 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_abbrev  0x00003ff1       0x12 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_abbrev  0x00004003       0xb8 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_abbrev  0x000040bb      0x47a CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_abbrev  0x00004535      0x499 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .debug_abbrev  0x000049ce      0x2e3 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+.debug_abbrev   0x00000000     0x4cc3
+ .debug_abbrev  0x00000000      0x331 CMakeFiles/mcp4912_spi.dir/mcp4912_spi.c.obj
+ .debug_abbrev  0x00000331      0x3a6 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_abbrev  0x000006d7       0xf8 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_abbrev  0x000007cf      0x2ce CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_abbrev  0x00000a9d      0x249 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_abbrev  0x00000ce6      0x500 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_abbrev  0x000011e6      0x116 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_abbrev  0x000012fc      0x3f1 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_abbrev  0x000016ed      0x5c3 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_abbrev  0x00001cb0      0x3d5 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_abbrev  0x00002085      0x290 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_abbrev  0x00002315      0x349 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_abbrev  0x0000265e      0x434 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_abbrev  0x00002a92      0x1e7 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_abbrev  0x00002c79      0x1a8 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_abbrev  0x00002e21      0x10c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_abbrev  0x00002f2d      0x530 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_abbrev  0x0000345d      0x371 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_abbrev  0x000037ce       0x12 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_abbrev  0x000037e0      0x167 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_abbrev  0x00003947       0x12 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_abbrev  0x00003959       0x12 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_abbrev  0x0000396b      0x1c3 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_abbrev  0x00003b2e      0x2b3 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+ .debug_abbrev  0x00003de1       0x12 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_abbrev  0x00003df3       0x14 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_abbrev  0x00003e07       0x12 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_abbrev  0x00003e19      0x1c6 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_abbrev  0x00003fdf       0x12 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_abbrev  0x00003ff1       0x12 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_abbrev  0x00004003       0x12 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_abbrev  0x00004015       0xb8 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_abbrev  0x000040cd      0x47a CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_abbrev  0x00004547      0x499 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ .debug_abbrev  0x000049e0      0x2e3 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
 
 .debug_loclists
                 0x00000000     0xbed4
@@ -3065,108 +3066,108 @@ LOAD linker stubs
  .debug_rnglists
                 0x00000ed8       0x62 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
 
-.debug_line     0x00000000    0x11a78
- .debug_line    0x00000000      0x673 CMakeFiles/mcp4912_spi.dir/mcp4912_spi.c.obj
- .debug_line    0x00000673      0xc4e CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_line    0x000012c1      0x2ba CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_line    0x0000157b      0x4c3 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_line    0x00001a3e      0x4ad CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_line    0x00001eeb     0x10b3 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_line    0x00002f9e      0x264 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_line    0x00003202     0x1123 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_line    0x00004325     0x1a24 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_line    0x00005d49      0xc5c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_line    0x000069a5      0x857 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_line    0x000071fc      0x8b7 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_line    0x00007ab3      0xa72 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_line    0x00008525      0x550 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_line    0x00008a75      0x48a CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_line    0x00008eff      0x2d1 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_line    0x000091d0      0xb6c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_line    0x00009d3c     0x12e8 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_line    0x0000b024      0x11a CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_line    0x0000b13e      0x297 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_line    0x0000b3d5      0x2a9 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_line    0x0000b67e      0x3fa CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_line    0x0000ba78      0x3f0 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_line    0x0000be68     0x222d CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
- .debug_line    0x0000e095      0x66c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_line    0x0000e701       0x61 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_line    0x0000e762      0x3b2 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_line    0x0000eb14      0x3e5 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_line    0x0000eef9      0x198 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_line    0x0000f091       0x94 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_line    0x0000f125       0xa5 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_line    0x0000f1ca      0x1f5 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_line    0x0000f3bf      0xf3c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_line    0x000102fb      0xa90 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .debug_line    0x00010d8b      0xced CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+.debug_line     0x00000000    0x11a8a
+ .debug_line    0x00000000      0x685 CMakeFiles/mcp4912_spi.dir/mcp4912_spi.c.obj
+ .debug_line    0x00000685      0xc4e CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_line    0x000012d3      0x2ba CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_line    0x0000158d      0x4c3 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_line    0x00001a50      0x4ad CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_line    0x00001efd     0x10b3 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_line    0x00002fb0      0x264 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_line    0x00003214     0x1123 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_line    0x00004337     0x1a24 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_line    0x00005d5b      0xc5c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_line    0x000069b7      0x857 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_line    0x0000720e      0x8b7 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_line    0x00007ac5      0xa72 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_line    0x00008537      0x550 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_line    0x00008a87      0x48a CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_line    0x00008f11      0x2d1 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_line    0x000091e2      0xb6c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_line    0x00009d4e     0x12e8 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_line    0x0000b036      0x11a CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_line    0x0000b150      0x297 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_line    0x0000b3e7      0x2a9 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_line    0x0000b690      0x3fa CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_line    0x0000ba8a      0x3f0 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_line    0x0000be7a     0x222d CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+ .debug_line    0x0000e0a7      0x66c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_line    0x0000e713       0x61 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_line    0x0000e774      0x3b2 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_line    0x0000eb26      0x3e5 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_line    0x0000ef0b      0x198 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_line    0x0000f0a3       0x94 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_line    0x0000f137       0xa5 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_line    0x0000f1dc      0x1f5 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_line    0x0000f3d1      0xf3c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_line    0x0001030d      0xa90 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ .debug_line    0x00010d9d      0xced CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
 
-.debug_str      0x00000000     0x41a3
- .debug_str     0x00000000     0x41a3 CMakeFiles/mcp4912_spi.dir/mcp4912_spi.c.obj
-                                0x7aa (size before relaxing)
- .debug_str     0x000041a3      0xa1b CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_str     0x000041a3      0x242 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_str     0x000041a3      0x386 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_str     0x000041a3      0x36d CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_str     0x000041a3      0x83b CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_str     0x000041a3      0x223 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_str     0x000041a3      0x615 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_str     0x000041a3      0xc98 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_str     0x000041a3      0x74d CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_str     0x000041a3      0x413 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_str     0x000041a3      0x646 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_str     0x000041a3      0x6ea CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_str     0x000041a3      0x2fe CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_str     0x000041a3      0x344 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_str     0x000041a3      0x241 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_str     0x000041a3      0x804 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_str     0x000041a3      0x4a2 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_str     0x000041a3       0x9d CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_str     0x000041a3      0x299 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_str     0x000041a3       0x97 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_str     0x000041a3       0x9b CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_str     0x000041a3      0x2e2 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_str     0x000041a3      0x52e CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
- .debug_str     0x000041a3       0xa1 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_str     0x000041a3       0xa6 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_str     0x000041a3       0x99 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_str     0x000041a3      0x2de CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_str     0x000041a3       0x9f CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_str     0x000041a3       0x9d CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_str     0x000041a3       0x9a CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_str     0x000041a3      0x404 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_str     0x000041a3      0x9ef CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_str     0x000041a3      0x90b CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .debug_str     0x000041a3      0x5bf CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+.debug_str      0x00000000     0x41a4
+ .debug_str     0x00000000     0x41a4 CMakeFiles/mcp4912_spi.dir/mcp4912_spi.c.obj
+                                0x7ab (size before relaxing)
+ .debug_str     0x000041a4      0xa1b CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_str     0x000041a4      0x242 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_str     0x000041a4      0x386 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_str     0x000041a4      0x36d CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_str     0x000041a4      0x83b CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_str     0x000041a4      0x223 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_str     0x000041a4      0x615 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_str     0x000041a4      0xc98 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_str     0x000041a4      0x74d CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_str     0x000041a4      0x413 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_str     0x000041a4      0x646 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_str     0x000041a4      0x6ea CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_str     0x000041a4      0x2fe CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_str     0x000041a4      0x344 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_str     0x000041a4      0x241 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_str     0x000041a4      0x804 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_str     0x000041a4      0x4a2 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_str     0x000041a4       0x9d CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_str     0x000041a4      0x299 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_str     0x000041a4       0x97 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_str     0x000041a4       0x9b CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_str     0x000041a4      0x2e2 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_str     0x000041a4      0x52e CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+ .debug_str     0x000041a4       0xa1 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_str     0x000041a4       0xa6 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_str     0x000041a4       0x99 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_str     0x000041a4      0x2de CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_str     0x000041a4       0x9f CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_str     0x000041a4       0x9d CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_str     0x000041a4       0x9a CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_str     0x000041a4      0x404 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_str     0x000041a4      0x9ef CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_str     0x000041a4      0x90b CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ .debug_str     0x000041a4      0x5bf CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
 
-.debug_frame    0x00000000     0x22d8
- .debug_frame   0x00000000       0x48 CMakeFiles/mcp4912_spi.dir/mcp4912_spi.c.obj
- .debug_frame   0x00000048      0x278 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_frame   0x000002c0       0x38 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_frame   0x000002f8       0x9c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_frame   0x00000394       0xc8 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_frame   0x0000045c      0x228 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_frame   0x00000684       0x20 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_frame   0x000006a4      0x254 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_frame   0x000008f8      0x464 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_frame   0x00000d5c      0x17c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_frame   0x00000ed8      0x198 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_frame   0x00001070       0xf8 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_frame   0x00001168      0x130 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_frame   0x00001298       0x44 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_frame   0x000012dc       0xa8 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_frame   0x00001384       0x40 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_frame   0x000013c4      0x18c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_frame   0x00001550      0x1fc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_frame   0x0000174c       0x64 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_frame   0x000017b0       0x2c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_frame   0x000017dc      0x4c8 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
- .debug_frame   0x00001ca4       0x2c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_frame   0x00001cd0      0x398 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_frame   0x00002068      0x114 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .debug_frame   0x0000217c      0x134 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
- .debug_frame   0x000022b0       0x28 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
+.debug_frame    0x00000000     0x22dc
+ .debug_frame   0x00000000       0x4c CMakeFiles/mcp4912_spi.dir/mcp4912_spi.c.obj
+ .debug_frame   0x0000004c      0x278 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_frame   0x000002c4       0x38 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_frame   0x000002fc       0x9c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_frame   0x00000398       0xc8 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_frame   0x00000460      0x228 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_frame   0x00000688       0x20 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_frame   0x000006a8      0x254 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_frame   0x000008fc      0x464 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_frame   0x00000d60      0x17c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_frame   0x00000edc      0x198 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_frame   0x00001074       0xf8 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_frame   0x0000116c      0x130 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_frame   0x0000129c       0x44 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_frame   0x000012e0       0xa8 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_frame   0x00001388       0x40 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_frame   0x000013c8      0x18c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_frame   0x00001554      0x1fc CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_frame   0x00001750       0x64 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_frame   0x000017b4       0x2c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_frame   0x000017e0      0x4c8 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+ .debug_frame   0x00001ca8       0x2c CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_frame   0x00001cd4      0x398 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_frame   0x0000206c      0x114 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ .debug_frame   0x00002180      0x134 CMakeFiles/mcp4912_spi.dir/Users/lucasolschansky/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+ .debug_frame   0x000022b4       0x28 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
 
 .debug_line_str
                 0x00000000      0x36a
