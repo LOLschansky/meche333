@@ -59,6 +59,8 @@ static void write_register(unsigned short voltage, int channel) {
     cs_deselect();
 
 
+
+
 }
 #endif
 
@@ -102,7 +104,7 @@ int main() {
         //need to multiply by 2 to get proper period
 
 
-        write_register(voltage_triangle-1, 1);
+        write_register(voltage_triangle, 1);
         write_register(voltage_sin, 0);
 
         if ((t == 0) || (t == 1023)){
