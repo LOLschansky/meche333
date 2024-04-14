@@ -83,10 +83,10 @@ int main() {
 
         
         if (read()){
-            set(1);
+            set(0);
         }
         else{
-            set(0);
+            set(1);
         }
         
 

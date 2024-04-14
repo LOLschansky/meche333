@@ -431,7 +431,7 @@ Disassembly of section .text:
 100003d8:	625a      	str	r2, [r3, #36]	@ 0x24
 100003da:	f7ff ff95 	bl	10000308 <chip_init>
 100003de:	e002      	b.n	100003e6 <main+0x4e>
-100003e0:	2001      	movs	r0, #1
+100003e0:	2000      	movs	r0, #0
 100003e2:	f7ff ffa5 	bl	10000330 <set>
 100003e6:	24d0      	movs	r4, #208	@ 0xd0
 100003e8:	0624      	lsls	r4, r4, #24
@@ -446,7 +446,7 @@ Disassembly of section .text:
 100003fe:	f7ff ffab 	bl	10000358 <read>
 10000402:	2800      	cmp	r0, #0
 10000404:	d1ec      	bne.n	100003e0 <main+0x48>
-10000406:	2000      	movs	r0, #0
+10000406:	2001      	movs	r0, #1
 10000408:	f7ff ff92 	bl	10000330 <set>
 1000040c:	e7eb      	b.n	100003e6 <main+0x4e>
 1000040e:	46c0      	nop			@ (mov r8, r8)
