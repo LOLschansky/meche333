@@ -1,0 +1,3 @@
+/Users/lucasolschansky/Desktop/meche433/hw6/build/pioasm/CMakeFiles/pioasm.dir
+/Users/lucasolschansky/Desktop/meche433/hw6/build/pioasm/CMakeFiles/edit_cache.dir
+/Users/lucasolschansky/Desktop/meche433/hw6/build/pioasm/CMakeFiles/rebuild_cache.dir
