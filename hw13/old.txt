@@ -1,0 +1,205 @@
+
+
+
+
+
+
+#include <stdio.h>
+
+#include "hardware/i2c.h"
+#include "pico/binary_info.h"
+#include "pico/stdlib.h"
+
+//Device address
+static int addr = 0x68;
+
+
+// config registers
+#define CONFIG 0x1A
+#define GYRO_CONFIG 0x1B
+#define ACCEL_CONFIG 0x1C
+#define PWR_MGMT_1 0x6B
+#define PWR_MGMT_2 0x6C
+// sensor data registers:
+#define ACCEL_XOUT_H 0x3B
+#define ACCEL_XOUT_L 0x3C
+#define ACCEL_YOUT_H 0x3D
+#define ACCEL_YOUT_L 0x3E
+#define ACCEL_ZOUT_H 0x3F
+#define ACCEL_ZOUT_L 0x40
+#define TEMP_OUT_H   0x41
+#define TEMP_OUT_L   0x42
+#define GYRO_XOUT_H  0x43
+#define GYRO_XOUT_L  0x44
+#define GYRO_YOUT_H  0x45
+#define GYRO_YOUT_L  0x46
+#define GYRO_ZOUT_H  0x47
+#define GYRO_ZOUT_L  0x48
+#define WHO_AM_I     0x75
+
+#ifdef i2c_default
+static void mpu6050_reset() {
+    // Two byte reset. First byte register, second byte data
+    // There are a load more options to set up the device in different ways that could be added here
+    uint8_t buf[] = {0x6B, 0x80};
+    i2c_write_blocking(i2c_default, addr, buf, 2, false);
+}
+
+static void mpu6050_read_raw(int16_t accel[3], int16_t gyro[3], int16_t *temp) {
+    // For this particular device, we send the device the register we want to read
+    // first, then subsequently read from the device. The register is auto incrementing
+    // so we don't need to keep sending the register we want, just the first.
+
+    uint8_t buffer[6];
+
+    // Start reading acceleration registers from register 0x3B for 6 bytes
+    uint8_t val = 0x3B;
+    i2c_write_blocking(i2c_default, addr, &val, 1, true); // true to keep master control of bus
+    i2c_read_blocking(i2c_default, addr, buffer, 6, false);
+
+    for (int i = 0; i < 3; i++) {
+        accel[i] = (buffer[i * 2] << 8 | buffer[(i * 2) + 1]);
+    }
+
+    // Now gyro data from reg 0x43 for 6 bytes
+    // The register is auto incrementing on each read
+    val = 0x43;
+    i2c_write_blocking(i2c_default, addr, &val, 1, true);
+    i2c_read_blocking(i2c_default, addr, buffer, 6, false);  // False - finished with bus
+
+    for (int i = 0; i < 3; i++) {
+        gyro[i] = (buffer[i * 2] << 8 | buffer[(i * 2) + 1]);;
+    }
+
+    // Now temperature from reg 0x41 for 2 bytes
+    // The register is auto incrementing on each read
+    val = 0x41;
+    i2c_write_blocking(i2c_default, addr, &val, 1, true);
+    i2c_read_blocking(i2c_default, addr, buffer, 2, false);  // False - finished with bus
+
+    *temp = buffer[0] << 8 | buffer[1];
+}
+#endif
+
+
+
+int chip_init() {
+    // use the "handheld device dynamic" optimal setting (see datasheet)
+    uint8_t powr_mgmt[2];
+    uint8_t accel_config[2];
+    uint8_t gyro_config[2];
+    //uint8_t who_am_i[2];
+
+
+    // turn on the chip
+    powr_mgmt[0] = PWR_MGMT_1;
+    powr_mgmt[1] = 0x00;
+    i2c_write_blocking(i2c_default, addr, powr_mgmt, 2, false);
+
+    // enable the accelerometer
+    accel_config[0] = ACCEL_CONFIG;
+    accel_config[1] = 0B11100000;
+    i2c_write_blocking(i2c_default, addr, accel_config, 2, false);
+
+    // enable the gyroscope
+    gyro_config[0] = GYRO_CONFIG;
+    gyro_config[1] = 0B11111000;
+    i2c_write_blocking(i2c_default, addr, gyro_config, 2, false);
+
+    //check if chip is properly connected
+    uint8_t who_am_i[2];
+    uint8_t reg = WHO_AM_I;
+
+    i2c_write_blocking(i2c_default, addr, &reg, 1, true);
+    i2c_read_blocking(i2c_default, addr, who_am_i, 2, false);
+
+    if (who_am_i != 0x00){
+        printf("Chip found \n");
+        return 1;
+    }
+    printf("Chip not found \n");
+    return 0;
+}
+
+
+/*
+int burst_read() {
+    uint8_t data[14];
+    i2c_read_blocking(i2c_default, ADDR, data, 14, false);
+
+    // Print the received data
+    for (int i = 0; i < 14; i++) {
+        printf("%02x ", data[i]);
+    }
+    return 1;
+
+
+    /*
+    uint8_t buf[1];
+    uint8_t reg = REG_GPIO;
+
+    i2c_write_blocking(i2c_default, ADDR, &reg, 1, true);
+    i2c_read_blocking(i2c_default, ADDR, buf, 1, false);
+
+    if (buf[0]&0b1 == 0b1){
+        return 1;
+    }
+    else{
+        return  0;
+    }
+}
+*/
+
+
+
+
+int main() {
+    stdio_init_all();
+
+    while (!stdio_usb_connected()) {
+        sleep_ms(100);
+    }
+
+    // I2C is "open drain", pull ups to keep signal high when no data is being sent
+    i2c_init(i2c_default, 100 * 1000);
+    gpio_set_function(PICO_DEFAULT_I2C_SDA_PIN, GPIO_FUNC_I2C);
+    gpio_set_function(PICO_DEFAULT_I2C_SCL_PIN, GPIO_FUNC_I2C);
+    gpio_pull_up(PICO_DEFAULT_I2C_SDA_PIN);
+    gpio_pull_up(PICO_DEFAULT_I2C_SCL_PIN);
+    bi_decl(bi_2pins_with_func(PICO_DEFAULT_I2C_SDA_PIN, PICO_DEFAULT_I2C_SCL_PIN, GPIO_FUNC_I2C));
+
+    //Pico heartbeat
+    const uint LED_PIN = PICO_DEFAULT_LED_PIN;
+    gpio_init(LED_PIN);
+    gpio_set_dir(LED_PIN, GPIO_OUT);
+
+
+    // initializie the chip
+    //mpu6050_reset();
+    chip_init();
+    
+    int16_t acceleration[3], gyro[3], temp;
+
+  
+    //sleep_ms(250); // sleep so that data polling and register update don't collide
+    while (1) {
+        //Pico heartbeat
+        gpio_put(LED_PIN, 1);
+        sleep_ms(100);
+        gpio_put(LED_PIN, 0);
+        sleep_ms(100);
+
+        mpu6050_read_raw(acceleration, gyro, &temp);
+
+        // These are the raw numbers from the chip, so will need tweaking to be really useful.
+        // See the datasheet for more information
+        printf("Acc. X = %d, Y = %d, Z = %d\n", acceleration[0], acceleration[1], acceleration[2]);
+        printf("Gyro. X = %d, Y = %d, Z = %d\n", gyro[0], gyro[1], gyro[2]);
+        // Temperature is simple so use the datasheet calculation to get deg C.
+        // Note this is chip temperature.
+        printf("Temp. = %f\n", (temp / 340.0) + 36.53);
+    }
+}
+
+
+
