@@ -3,6 +3,14 @@ import numpy as np
 import csv
 import pandas as pd
 
+#Optimal parameter values
+#SigA: A = 0.997, B = 0.003
+#SigB: A = 0.999, B = 0.001
+#SigC: A = 0.985, B = 0.015
+#SigD: A = 0.985, B = 0.015
+#
+#
+#
 def iir_filter(data, A, B):
     filtered_data = [data[0]]  # Initialize with the first data point
     for i in range(1, len(data)):
@@ -66,7 +74,7 @@ def main():
             data.append(float(row[1])) # second column
             #data2.append(float(row[2])) # third column
     
-    AB_values = [(0.05, 0.95), (0.4, 0.6), (0.5, 0.5), (0.6, 0.4), (0.985, 0.015)]  # Try different A and B values
+    AB_values = [(0.05, 0.95), (0.4, 0.6), (0.5, 0.5), (0.6, 0.4), (0.997, 0.003)]  # Try different A and B values
     for A, B in AB_values:
         filtered_data = iir_filter(data, A, B)
         plot_data_and_fft(data, filtered_data, A, B, file_name, t)

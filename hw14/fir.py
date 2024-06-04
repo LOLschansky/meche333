@@ -3,10 +3,11 @@ import numpy as np
 import csv
 import pandas as pd
 
-# coef for sigA
-# 231 coefficients
-# Fl = 8Hz, Bl = 8Hz; Blackman WINDOW
+# coeff.. kept constan for all 4 signals
+# 461 coefficients
+# Fl = 10Hz, Bl = 10Hz; Blackman WINDOW
 
+#generated coefficients:
 h = [
     0.000000000000000000,
     0.000000022609304456,
@@ -532,7 +533,7 @@ def plot_data_and_fft(data, filtered_data, h, file_name, t):
 def main():
     t = [] # column 0
     data = [] # column 1S
-    file_name = 'sigB.csv'  # Replace with your CSV file path
+    file_name = 'sigD.csv'  # Replace with your CSV file path
 
     with open(file_name) as f:
         # open the csv file
