@@ -20,6 +20,10 @@
 #define IN1 2 // PWM signal
 #define IN2 3 // binary signal
 
+#define IN3 6 // PWM signal
+#define IN4 7 // binary signal
+
+
 char message[50];
 /// \tag::uart_advanced[]
 
@@ -34,7 +38,8 @@ char message[50];
 #define UART_TX_PIN 0
 #define UART_RX_PIN 1
 
-void motor_control(int line_value);
+void motor_left(int line_value);
+void motor_right(int line_value);
 void motor_init();
 
 static int chars_rxed = 0;
@@ -53,7 +58,8 @@ void on_uart_rx() {
            // sprintf(&message[x],"0");
             printf("From usb: %d \n", val);
              //duty cycle for left wheel
-            motor_control(val);
+            motor_left(val);
+            motor_right(val);
 
             //drawMessage(0,16, message);
             //ssd1306_update();
@@ -145,7 +151,7 @@ int main() {
 // initializes the pwm and gpio functions and sets the motor to break mode
 void motor_init(){
     //initialize the moto
-    //initialize IN1 (PWM)
+    //initialize PWM: IN1, IN3
     gpio_set_function(IN1, GPIO_FUNC_PWM); // Set the LED Pin to be PWM
     uint slice_num = pwm_gpio_to_slice_num(IN1); // Get PWM slice number
     float div = 1; // must be between 1-255
@@ -154,24 +160,55 @@ void motor_init(){
     pwm_set_wrap(slice_num, wrap);
     pwm_set_enabled(slice_num, true); // turn on the PWM
     pwm_set_gpio_level(IN1, wrap); // set the motor to break (100% duty cycle)
+
+    gpio_set_function(IN3, GPIO_FUNC_PWM); // Set the LED Pin to be PWM
+    uint slice_num_2 = pwm_gpio_to_slice_num(IN3); // Get PWM slice number
+    float div_2 = 1; // must be between 1-255
+    pwm_set_clkdiv(slice_num_2, div_2); // divider
+    uint16_t wrap_2 = 6250; // when to rollover, must be less than 65535
+    pwm_set_wrap(slice_num_2, wrap_2);
+    pwm_set_enabled(slice_num_2, true); // turn on the PWM
+    pwm_set_gpio_level(IN3, wrap_2); // set the motor to break (100% duty cycle)
     
-    //initialize IN2 (digital value)
+
+
+    //initialize binary: IN2, IN4 (digital value)
     gpio_init(IN2);
     gpio_set_dir(IN2, GPIO_OUT);
     gpio_put(IN2, 1);
+
+    gpio_init(IN4);
+    gpio_set_dir(IN4, GPIO_OUT);
+    gpio_put(IN4, 1);
+    
 }
 
 //duty cycle for left wheel
-void motor_control(int line_value){
+void motor_left(int line_value){
   uint16_t wrap = 6250; // when to rollover, must be less than 65535
-  gpio_put(IN2, 1);
+  gpio_put(IN2, 0);
   if (line_value < 40) { // left duty
     float duty = ( (float) line_value / 40);
     pwm_set_gpio_level(IN1, wrap * duty);
     printf("duty cycle: %f\r\n", wrap*duty);
   }
   else{
-    pwm_set_gpio_level(IN1, wrap);
+    pwm_set_gpio_level(IN3, wrap);
+    printf("duty cycle: %d\r\n", wrap);
+  }
+}
+
+//duty cycle for right wheel
+void motor_right(int line_value){
+  uint16_t wrap = 6250; // when to rollover, must be less than 65535
+  gpio_put(IN4, 0);
+  if (line_value > 60) { // left duty
+    float duty = 1.0 -  (line_value - 60.0) / 40.0;
+    pwm_set_gpio_level(IN3, wrap*duty);
+    printf("duty cycle: %f\r\n", wrap*duty);
+  }
+  else {
+    pwm_set_gpio_level(IN3, wrap);
     printf("duty cycle: %d\r\n", wrap);
   }
 }
